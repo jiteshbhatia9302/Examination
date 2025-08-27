@@ -111,8 +111,7 @@ export default function Home() {
         </form>
       </div>
 
-      {/* Student Name */}
-{studentName && (
+  {studentName && (
   <div style={{ textAlign: "center", marginBottom: "15px" }}>
     <span
       style={{
@@ -146,6 +145,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
