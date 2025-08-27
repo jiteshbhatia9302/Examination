@@ -27,8 +27,9 @@ export default function Home() {
     <h1>Developing Node JS Applications</h1> 
   <h2>Continuous Assessment 1</h2>
   <h2>Section: K22FG</h2>
-    <h2>Enter your Roll Number
+    
       <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
+  <h2>Enter your Roll Number
         <input
           type="number"
           value={roll}
@@ -40,8 +41,9 @@ export default function Home() {
         <button type="submit" style={{ padding: "6px 12px", marginLeft: "10px" }}>
           Submit
         </button>
-      </form>
             </h2>
+      </form>
+            
             </span>
       {content && (
         <div style={{
@@ -58,6 +60,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
