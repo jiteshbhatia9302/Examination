@@ -104,7 +104,21 @@ export default function Home() {
             </span>  
 
 {studentName && (
-       <h2><span style={{color:"green", textAlign: "center", marginBottom: "10px", backgroundColor: "yellow", borderRadius: "20px", display: "block"}}>Student Name: {studentName} </span></h2> )}
+  <div style={{ textAlign: "center", marginBottom: "15px" }}>
+    <span
+      style={{
+        color: "purple",
+        backgroundColor: "cyan",
+        borderRadius: "20px",
+        padding: "8px 20px",
+        display: "inline-block",
+        fontWeight: "bold"
+      }}
+    >
+      Student Name: {studentName}
+    </span>
+  </div>
+)}
  
       {content && (
         <div style={{
@@ -121,6 +135,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
