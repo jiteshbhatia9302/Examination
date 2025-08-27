@@ -55,14 +55,14 @@ export default function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
- const name = students[roll];
+    const name = students[roll];
     if (!name) {
       setStudentName("");
       setContent("❌ Roll number not found in the student list.");
       return;
     }
     setStudentName(name);
-    
+
     try {
       const response = await fetch("/api/getContent", {
         method: "POST",
@@ -80,49 +80,66 @@ export default function Home() {
 
   return (
     <div style={{ fontFamily: "Arial, sans-serif", margin: "30px" }}>
-  <span style={{ textAlign: "center" }}>
-    <h1>Developing Node JS Applications</h1> 
-  <h2>Continuous Assessment 1</h2>
-  <h2>Section: K22FG</h2>
-    
-      <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
-  <h2>Enter your Roll Number &nbsp;&nbsp;
-        <input
-          type="number"
-          value={roll}
-          onChange={(e) => setRoll(e.target.value)}
-          placeholder="Enter roll number"
-          required
-          style={{ padding: "5px", width: "200px" }}
-        /> 
-        <button type="submit" style={{ padding: "6px 12px", marginLeft: "10px" }}>
-          Submit
-        </button>
-            </h2>
-      </form>
-      </span>
+      {/* Header */}
+      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+        <h1>Developing Node JS Applications</h1>
+        <h2>Continuous Assessment 1</h2>
+        <h2>Section: K22FG</h2>
+      </div>
 
-{studentName && (
-  <div style={{ textAlign: "center", marginBottom: "15px" }}>
-    <span style={{color: "purple", backgroundColor: "cyan", borderRadius: "20px", padding: "8px 20px", display: "inline-block", fontWeight: "bold" }}>
-    {studentName}
-    </span>
-  </div>
-)}
+      {/* Form */}
+      <div style={{ textAlign: "center" }}>
+        <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
+          <h2>
+            Enter your Roll Number &nbsp;&nbsp;
+            <input
+              type="text"
+              value={roll}
+              onChange={(e) => setRoll(e.target.value)}
+              placeholder="Enter roll number"
+              required
+              pattern="\d+"
+              style={{ padding: "5px", width: "200px" }}
+            />
+            <button
+              type="submit"
+              style={{ padding: "6px 12px", marginLeft: "10px" }}
+            >
+              Submit
+            </button>
+          </h2>
+        </form>
+      </div>
 
+      {/* Student Name */}
+      {studentName && (
+        <div style={{ textAlign: "center", marginBottom: "15px" }}>
+          <span
+            style={{
+              color: "purple",
+              backgroundColor: "cyan",
+              borderRadius: "20px",
+              padding: "8px 20px",
+              display: "inline-block",
+              fontWeight: "bold"
+            }}
+          >
+            {studentName}
+          </span>
+        </div>
+      )}
 
-
-
-
+      {/* Content */}
       {content && (
-        <div style={{
-          marginTop: "20px",
-          padding: "15px",
-          border: "1px solid #ccc",
-          background: "#f9f9f9",
-          lineHeight: "2" // ← Increased spacing between lines
-        }}>
-          {/* Render HTML safely */}
+        <div
+          style={{
+            marginTop: "20px",
+            padding: "15px",
+            border: "1px solid #ccc",
+            background: "#f9f9f9",
+            lineHeight: "2"
+          }}
+        >
           <div dangerouslySetInnerHTML={{ __html: content }} />
         </div>
       )}
