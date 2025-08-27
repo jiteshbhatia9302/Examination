@@ -119,22 +119,27 @@ export default function Home() {
     </span>
   </div>
 )}
- 
-      {content && (
-        <div style={{
-          marginTop: "20px",
-          padding: "15px",
-          border: "1px solid #ccc",
-          background: "#f9f9f9",
-          lineHeight: "2" // ← Increased spacing between lines
-        }}>
-          {/* Render HTML safely */}
-          <div dangerouslySetInnerHTML={{ __html: content }} />
-        </div>
-      )}
-    </div>
-  );
-}
+
+
+{fileContent && (
+  <div style={{ textAlign: "center", marginTop: "15px" }}>
+    <div
+      style={{
+        backgroundColor: "#f4f4f4",
+        color: "#333",
+        borderRadius: "15px",
+        padding: "15px 25px",
+        display: "inline-block",
+        textAlign: "left",  // keeps multi-line text aligned nicely
+        lineHeight: "1.6",
+        boxShadow: "0px 2px 6px rgba(0,0,0,0.15)"
+      }}
+      dangerouslySetInnerHTML={{ __html: fileContent }}
+    />
+  </div>
+ )}
+   
+
 
 
 
