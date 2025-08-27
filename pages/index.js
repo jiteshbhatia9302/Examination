@@ -112,22 +112,22 @@ export default function Home() {
       </div>
 
       {/* Student Name */}
-      {studentName && (
-        <div style={{ textAlign: "center", marginBottom: "15px" }}>
-          <span
-            style={{
-              color: "purple",
-              backgroundColor: "cyan",
-              borderRadius: "20px",
-              padding: "8px 20px",
-              display: "inline-block",
-              fontWeight: "bold"
-            }}
-          >
-            {studentName}
-          </span>
-        </div>
-      )}
+{studentName && (
+  <div style={{ textAlign: "center", marginBottom: "15px" }}>
+    <span
+      style={{
+        color: "purple",
+        backgroundColor: "cyan",
+        borderRadius: "20px",
+        padding: "8px 20px",
+        display: "inline-block",
+        fontWeight: "bold"
+      }}
+    >
+      {studentName}
+    </span>
+  </div>
+)}
 
       {/* Content */}
       {content && (
@@ -146,6 +146,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
