@@ -100,8 +100,7 @@ export default function Home() {
         </button>
             </h2>
       </form>
-            
-            </span>
+      </span>
 
 {studentName && (
   <div style={{ textAlign: "center", marginBottom: "15px" }}>
@@ -139,6 +138,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
