@@ -103,7 +103,7 @@ export default function Home() {
             
            
 {studentName && (
-        <h3 style={{ marginBottom: "10px" }}>Student Name: {studentName}</h3>
+        <h3 style={{ marginBottom: "10px", textAlign: "center" }}>Student Name: {studentName}</h3>
       )}
  </span>
       {content && (
@@ -121,6 +121,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
