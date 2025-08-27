@@ -45,7 +45,6 @@ export default function Home() {
           border: "1px solid #ccc",
           background: "#f9f9f9"
         }}>
-          <h3>File Content:</h3>
           {/* Render HTML safely */}
           <div dangerouslySetInnerHTML={{ __html: content }} />
         </div>
@@ -53,4 +52,5 @@ export default function Home() {
     </div>
   );
 }
+
 
