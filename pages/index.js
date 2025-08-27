@@ -101,10 +101,11 @@ export default function Home() {
             </h2>
       </form>
             
-            </span>
+           
 {studentName && (
         <h3 style={{ marginBottom: "10px" }}>Student Name: {studentName}</h3>
       )}
+ </span>
       {content && (
         <div style={{
           marginTop: "20px",
@@ -120,6 +121,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
