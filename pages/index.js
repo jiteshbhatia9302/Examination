@@ -104,23 +104,10 @@ export default function Home() {
             </span>  
 
 {studentName && (
-  <div style={{ textAlign: "center", marginBottom: "15px" }}>
-    <span
-      style={{
-        color: "purple",
-        backgroundColor: "cyan",
-        borderRadius: "20px",
-        padding: "8px 20px",
-        display: "inline-block",
-        fontWeight: "bold"
-      }}
-    >
-      Student Name: {studentName}
-    </span>
-  </div>
-)}
+        <h3 style={{ marginBottom: "10px" }}>Student Name: {studentName}</h3>
+      )}
 
-{content && (
+      {content && (
         <div
           style={{
             marginTop: "10px",
