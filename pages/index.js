@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", margin: "30px" }}>
+    <div style={{ fontFamily: "Arial, sans-serif", margin: "30px", align: "center" }}>
     <h1>Developing Node JS Applications</h1>    
     <h2>Enter Roll Number</h2>
       <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
@@ -54,6 +54,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
