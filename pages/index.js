@@ -43,7 +43,8 @@ export default function Home() {
           marginTop: "20px",
           padding: "15px",
           border: "1px solid #ccc",
-          background: "#f9f9f9"
+          background: "#f9f9f9",
+          lineHeight: "2" // ← Increased spacing between lines
         }}>
           {/* Render HTML safely */}
           <div dangerouslySetInnerHTML={{ __html: content }} />
@@ -52,5 +53,6 @@ export default function Home() {
     </div>
   );
 }
+
 
 
