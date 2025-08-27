@@ -102,9 +102,25 @@ export default function Home() {
       </form>
             
             </span>
-{studentName && (
-        <h3 style={{ marginBottom: "10px" }}>Student Name: {studentName}</h3>
-      )}
+
+<div style={{ textAlign: "center", marginBottom: "10px" }}>
+  <span
+    style={{
+      color: "purple",
+      backgroundColor: "cyan",
+      borderRadius: "20px",
+      padding: "5px 15px",
+      display: "inline-block"
+    }}
+  >
+    Student Name: {studentName}
+  </span>
+</div>
+
+
+
+
+
       {content && (
         <div style={{
           marginTop: "20px",
@@ -120,6 +136,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
