@@ -1,6 +1,1 @@
-<h2 align=center>Set 2</h2>
-<ol>
-<li>Write a Node JS Script that contains any three asynchronous functions. Execute the script to show the output. Explain the order of statements executed in the script.
-<li>Write a Node JS script that creates a web server on the port number 3000. When a client makes a request to the server, it should display any 5 lines about your university and its image. Access the image from the internet.
-<li>Write a Node JS script that displays any three characteristics of the Operating System of the server.
-</ol>
+Hello
