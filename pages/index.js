@@ -36,11 +36,12 @@ export default function Home() {
           placeholder="Enter roll number"
           required
           style={{ padding: "5px", width: "200px" }}
-        /> </h2>
+        /> 
         <button type="submit" style={{ padding: "6px 12px", marginLeft: "10px" }}>
           Submit
         </button>
       </form>
+            </h2>
             </span>
       {content && (
         <div style={{
@@ -57,6 +58,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
