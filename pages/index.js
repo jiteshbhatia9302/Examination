@@ -103,19 +103,15 @@ export default function Home() {
             
             </span>  
 
-{studentName && (
-        <h3 style={{ marginBottom: "10px" }}>Student Name: {studentName}</h3>
-      )}
-
-      {content && (
+{content && (
         <div
           style={{
-            marginTop: "10px",
+            marginTop: "20px",
             padding: "15px",
             border: "1px solid #ccc",
             background: "#f9f9f9",
             lineHeight: "1.8",
-            maxWidth: "600px",
+            maxWidth: "600px", // optional, keeps text from stretching too much
             width: "100%"
           }}
         >
