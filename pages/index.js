@@ -103,19 +103,22 @@ export default function Home() {
             
             </span>
 
-<div style={{ textAlign: "center", marginBottom: "10px" }}>
-  <span
-    style={{
-      color: "purple",
-      backgroundColor: "cyan",
-      borderRadius: "20px",
-      padding: "5px 15px",
-      display: "inline-block"
-    }}
-  >
-    Student Name: {studentName}
-  </span>
-</div>
+{studentName && (
+  <div style={{ textAlign: "center", marginBottom: "15px" }}>
+    <span
+      style={{
+        color: "purple",
+        backgroundColor: "cyan",
+        borderRadius: "20px",
+        padding: "8px 20px",
+        display: "inline-block",
+        fontWeight: "bold"
+      }}
+    >
+      Student Name: {studentName}
+    </span>
+  </div>
+)}
 
 
 
@@ -136,6 +139,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
