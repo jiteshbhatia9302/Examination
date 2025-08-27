@@ -23,8 +23,9 @@ export default function Home() {
 
   return (
     <div style={{ fontFamily: "Arial, sans-serif", margin: "30px" }}>
-    <h1 style={{ textAlign: "center" }}>Developing Node JS Applications</h1>    
-    <h2 style={{ textAlign: "center" }}>Enter Roll Number</h2>
+  <span style={{ textAlign: "center" }}>
+    <h1>Developing Node JS Applications</h1>    
+    <h2>Enter Roll Number</h2>
       <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
         <input
           type="number"
@@ -38,7 +39,7 @@ export default function Home() {
           Submit
         </button>
       </form>
-
+            </span>
       {content && (
         <div style={{
           marginTop: "20px",
@@ -54,6 +55,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
