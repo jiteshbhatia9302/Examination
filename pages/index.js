@@ -29,7 +29,7 @@ export default function Home() {
   <h2>Section: K22FG</h2>
     
       <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
-  <h2>Enter your Roll Number
+  <h2>Enter your Roll Number &nbsp;&nbsp;
         <input
           type="number"
           value={roll}
@@ -60,6 +60,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
