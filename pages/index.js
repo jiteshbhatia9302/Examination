@@ -24,8 +24,10 @@ export default function Home() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif", margin: "30px" }}>
   <span style={{ textAlign: "center" }}>
-    <h1>Developing Node JS Applications</h1>    
-    <h2>Enter Roll Number</h2>
+    <h1>Developing Node JS Applications</h1> 
+  <h2>Continuous Assessment 1</h2>
+  <h2>Section: K22FG</h2>
+    <h2>Enter your Roll Number
       <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
         <input
           type="number"
@@ -34,7 +36,7 @@ export default function Home() {
           placeholder="Enter roll number"
           required
           style={{ padding: "5px", width: "200px" }}
-        />
+        /> </h2>
         <button type="submit" style={{ padding: "6px 12px", marginLeft: "10px" }}>
           Submit
         </button>
@@ -55,6 +57,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
