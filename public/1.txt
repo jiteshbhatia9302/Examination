@@ -4,11 +4,11 @@
 <li>Write a Node JS script that creates a web server on the port number 3000. When a client makes a request to the server, it displays any one General Knowledge Question (of your choice) to the user. The answer to the question is displayed after 5 seconds.
 <li>Write a Node JS Script that displays the table of 15. The following requirements must be met:
 <ol type=a>
-<li>The table displayed should be in the given format: 
-15 * 1 = 15
-15 * 2 = 30
-15 * 3 = 45 
-15 * 4 = 60
+<li>The table displayed should be in the given format: <br>
+15 * 1 = 15<br>
+15 * 2 = 30<br>
+15 * 3 = 45 <br>
+15 * 4 = 60<br>
 and so on.
 </li>Each line should be displayed at an interval of 2 seconds.
 <li>Each line should be displayed in alternate color repeatedly.
