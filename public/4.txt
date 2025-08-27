@@ -7,5 +7,5 @@
 <li>Deletes the file named C.txt.
 </ol>
 <li>Write a Node JS script that creates a web server on the port number 3000. When a client makes a request to the server, it should display any 5 lines about your favorite celebrity and his/her picture. Access the image from the internet.
-<li>Write a Node JS script that reads three files (file1.txt, file2.txt and file3.txt) synchronously using asynchronous function and Promise. Display the contents of the files read in the given order. 
+<li>Write a Node JS script that reads three files (file1.txt, file2.txt and file3.txt) synchronously Promise. Display the contents of the files read in the given order. 
 </ol>
