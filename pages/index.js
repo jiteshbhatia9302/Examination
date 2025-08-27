@@ -102,8 +102,9 @@ export default function Home() {
       </form>
             
             </span>  
+ <span style={{backgroundColor: "cyan", borderRadius: "20px", textAlign: "center", color:"purple"}}>
 {studentName && (
-        <span style={{backgroundColor: "yellow", borderRadius: "20px", textAlign: "center", color:"purple"}}><h3 style={{ marginBottom: "10px" }}>Student Name: {studentName}</h3>
+       <h3 style={{ marginBottom: "10px" }}>Student Name: {studentName}</h3>
       )}
  </span>
       {content && (
@@ -121,6 +122,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
