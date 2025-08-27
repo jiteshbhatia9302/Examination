@@ -10,7 +10,7 @@
 15 * 3 = 45 <br>
 15 * 4 = 60<br>
 and so on.
-</li>Each line should be displayed at an interval of 2 seconds.
+<li>Each line should be displayed at an interval of 2 seconds.
 <li>Each line should be displayed in alternate color repeatedly.
 </ol>
 </ol>
