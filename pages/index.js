@@ -43,13 +43,14 @@ export default function Home() {
           marginTop: "20px",
           padding: "15px",
           border: "1px solid #ccc",
-          background: "#f9f9f9",
-          whiteSpace: "pre-wrap"
+          background: "#f9f9f9"
         }}>
           <h3>File Content:</h3>
-          <div>{content}</div>
+          {/* Render HTML safely */}
+          <div dangerouslySetInnerHTML={{ __html: content }} />
         </div>
       )}
     </div>
   );
 }
+
