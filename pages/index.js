@@ -120,28 +120,30 @@ export default function Home() {
   </div>
 )}
 
-{content && (
-        <div
-          style={{
-            marginTop: "10px",
-            padding: "15px",
-            border: "1px solid #ccc",
-            background: "#f9f9f9",
-            lineHeight: "1.8",
-            maxWidth: "600px",
-            width: "100%"
-          }}
-        >
-          <h3>File Content:</h3>
-          <div dangerouslySetInnerHTML={{ __html: content }} />
-        </div>
-      )}
-    </div>
+{fileContent && (
+  <div style={{ textAlign: "center", marginTop: "15px" }}>
+    <div
+      style={{
+        backgroundColor: "#f4f4f4",
+        color: "#333",
+        borderRadius: "15px",
+        padding: "15px 25px",
+        display: "inline-block",
+        textAlign: "left",  // keeps multi-line text aligned nicely
+        lineHeight: "1.6",
+        boxShadow: "0px 2px 6px rgba(0,0,0,0.15)"
+      }}
+      dangerouslySetInnerHTML={{ __html: fileContent }}
+    />
+  </div>
+)}
+   </div>
   );
 }
 
 
    
+
 
 
 
