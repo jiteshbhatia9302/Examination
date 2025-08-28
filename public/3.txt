@@ -1,1 +1,9 @@
-Bye
+<ol>
+<li>Write a Node JS Script that reads the contents of a file and writes it to another. Display a meaningful error message if the source file does not exist.
+<li>Write a Node JS script that creates a web server on the port number 3000. When a client makes a request to the server, it should display on the browser the full URL the user had entered in the address bar to make the request.
+<li>Write a Node JS script that displays a reverse counting from 10 to 0. The following requirements must be met:
+<ol type=a>
+<li>Each value should be displayed after 1 second.
+<li>The last three numbers should be displayed in red color.
+</ol>
+</ol>
